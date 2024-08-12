@@ -67,7 +67,8 @@ class $modify(MyPauseLayer, PauseLayer) {
 
 		// creator name
 		auto author = Level->m_creatorName;
-		if (Level->m_levelType == GJLevelType::Local) author = "RobTop"; // official
+		std::string robtop = "RobTop";
+		if (Level->m_levelType == GJLevelType::Local) author = robtop; // official
 		std::string by = "By ";
 		auto tlb_author = CCLabelBMFont::create((by + author).c_str(), "goldFont.fnt");
 		tlb_author->setScale(0.8);
