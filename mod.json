@@ -1,0 +1,18 @@
+{
+	"geode": "3.4.0",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206"
+	},
+	"id": "naxrin.worse_pause",
+	"name": "Worse Pause",
+	"version": "v1.0.0",
+	"developer": "Naxrin",
+	"description": "Regarding BetterPause's not gonna reanimate, this is a temporary work for you friends.",
+	"resources":{
+		"sprites": [
+			"resources/*.png"
+		]
+	}
+}
