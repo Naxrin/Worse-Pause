@@ -68,8 +68,8 @@ class $modify(MyPauseLayer, PauseLayer) {
 		// creator name
 		auto author = Level->m_creatorName;
 		if (Level->m_levelType == GJLevelType::Local) author = "RobTop"; // official
-
-		auto tlb_author = CCLabelBMFont::create(("By " + author).c_str(), "goldFont.fnt");
+		std::string by = "By ";
+		auto tlb_author = CCLabelBMFont::create((by + author).c_str(), "goldFont.fnt");
 		tlb_author->setScale(0.8);
 
 		auto btn_author = CCMenuItemSpriteExtra::create(tlb_author, this, menu_selector(MyPauseLayer::onViewProfile));
